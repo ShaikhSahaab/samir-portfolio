@@ -4,11 +4,15 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
   const form = event.target;
   const statusMessage = document.getElementById('form-status');
+  const submitBtn = form.querySelector('button[type="submit"]');
 
   // Clear any previous status messages
   statusMessage.textContent = '';
+  statusMessage.style.color = '';
   
-  // Show loading text
+  // Disable the submit button and show loading text
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending...';
   statusMessage.textContent = 'Sending your message...';
   statusMessage.style.color = 'blue';
 
@@ -31,5 +35,15 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   .catch(error => {
     statusMessage.textContent = 'Something went wrong. Please try again.';
     statusMessage.style.color = 'red';
+  })
+  .finally(() => {
+    // Re-enable button and reset button text
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Message';
+
+    // Clear status message after 5 seconds
+    setTimeout(() => {
+      statusMessage.textContent = '';
+    }, 5000);
   });
 });
