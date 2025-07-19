@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: rgb(164, 153, 249);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#skills {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+header {
+  background:  rgb(69, 55, 173);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.1rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #f36f6f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-btn:hover{
+  background-color: #f22a2a;;
+}
+
+
+section {
+  padding: 60px 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.project-card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #f36f6f;
+  size: 20px;
+}
+
+.project-link:hover{
+  color: #ff0c0c;;
+}
+
+#projects{
+ 
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #020331;
+  font-size: 13px;
+  color: #c9d1d9; /* made brighter than #8b949e */
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+footer strong {
+  color: #58a6ff;
+  font-weight: 600;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #f36f6f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #d64b4b;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.leftsection {
+    font-size: 3rem;
+    margin: 20px;
+    text-align: justify;
+    color: #12065c;
+}
+
+
+
