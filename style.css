@@ -8,10 +8,15 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: rgb(164, 153, 249);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
-  width: 80%;
+  max-width: 1000px;
+  width: 90%;
   margin: 0 auto;
   background: #f4f4f4;
   padding: 20px;
@@ -19,58 +24,75 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#skills {
-  width: 75%;
+/* Skills and projects container unified */
+#skills,
+#projects {
+  max-width: 1000px;
+  width: 90%;
+  margin: 30px auto;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 0 auto;
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 header {
-  background:  rgb(69, 55, 173);
+  background: rgb(69, 55, 173);
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 30px 20px;
+  flex-shrink: 0;
 }
 
 header h1 {
-  font-size: 2.1rem;
+  font-size: 2rem;
+  margin-bottom: 5px;
 }
 
 header p {
   font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Navigation buttons container inside header */
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .cta-btn {
   display: inline-block;
-  margin-top: 20px;
   padding: 10px 20px;
   background: #f36f6f;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
-.cta-btn:hover{
-  background-color: #f22a2a;;
+.cta-btn:hover {
+  background-color: #f22a2a;
 }
-
 
 section {
-  padding: 60px 0;
+  padding: 60px 20px;
+  flex-grow: 1;
 }
 
 section h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 ul li {
@@ -83,43 +105,48 @@ ul li {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-card h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .project-card p {
   font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
 }
 
 .project-link {
   text-decoration: none;
   color: #f36f6f;
-  size: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-top: 10px;
+  transition: color 0.3s ease;
 }
 
-.project-link:hover{
-  color: #ff0c0c;;
-}
-
-#projects{
- 
-  width: 100%;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+.project-link:hover {
+  color: #ff0c0c;
 }
 
 footer {
   text-align: center;
-  padding: 15px;
+  padding: 15px 10px;
   background-color: #020331;
-  font-size: 13px;
-  color: #c9d1d9; /* made brighter than #8b949e */
+  font-size: 14px;
+  color: #c9d1d9;
   letter-spacing: 0.5px;
-  cursor: pointer;
+  cursor: default;
+  flex-shrink: 0;
 }
 
 footer strong {
@@ -127,20 +154,22 @@ footer strong {
   font-weight: 600;
 }
 
-footer p {
-  font-size: 1rem;
-}
-
 form {
   display: grid;
   gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   padding: 10px;
   font-size: 1rem;
   border-radius: 5px;
   border: 1px solid #ddd;
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 form button {
@@ -150,38 +179,114 @@ form button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 form button:hover {
   background: #d64b4b;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
-
+/* Responsive tweaks */
+@media screen and (max-width: 1024px) {
   header h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   section h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container,
+  #skills,
+  #projects {
+    width: 95%;
+    padding: 15px;
+  }
+
+  header {
+    padding: 25px 10px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  header nav {
+    gap: 10px;
+  }
+
+  .cta-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
   }
 
   .project-card {
     margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  form {
+    width: 100%;
+    padding: 0 10px;
   }
 }
 
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
 
+  header p {
+    font-size: 0.9rem;
+  }
 
-.leftsection {
-    font-size: 3rem;
-    margin: 20px;
-    text-align: justify;
-    color: #12065c;
+  .cta-btn {
+    padding: 7px 12px;
+    font-size: 0.85rem;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.9rem;
+  }
+
+  form button {
+    font-size: 0.9rem;
+  }
 }
 
-
-
+/* Optional: Styling for .leftsection (if used) */
+.leftsection {
+  font-size: 2.5rem;
+  margin: 20px;
+  text-align: justify;
+  color: #12065c;
+  word-wrap: break-word;
+}
