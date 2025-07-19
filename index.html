@@ -2,15 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> Shaikh Samir Salim - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Shaikh Samir Salim - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
-
 </head>
 
 <body>
@@ -18,26 +15,24 @@
   <!-- Header Section -->
   <header>
     <div class="top">
-      <h1> Shaikh Samir Salim </h1>
-      <p> Web Developer | Designer | CyberSecurity</p>
-      <a href="#projects" class="cta-btn">View My Work</a>
-       <a href="https://www.linkedin.com/in/samir-shaikh-a7365a330/" class="cta-btn">Linkdin</a>
-        <a href="https://github.com/ShaikhSahaab" class="cta-btn">GitHub</a>
+      <h1>Shaikh Samir Salim</h1>
+      <p>Web Developer | Designer | CyberSecurity</p>
+      <nav>
+        <a href="#projects" class="cta-btn">View My Work</a>
+        <a href="https://www.linkedin.com/in/samir-shaikh-a7365a330/" class="cta-btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/ShaikhSahaab" class="cta-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
     </div>
   </header>
-
- <!-- <div class="leftsection">
-                Hi, My name is <span class="col">Samir</span>
-                <div> and I am a passonate</div>
-                <span id="element"></span></div> -->
-
 
   <!-- About Section -->
   <section id="about">
     <div class="container">
       <h2>About Me 🧑‍💻</h2>
-      <p>I am a passionate web developer with experience in creating modern websites and web applications. I enjoy
-        coding, learning new technologies, and solving challenging problems.</p>
+      <p>
+        I am a passionate web developer with experience in creating modern websites and web applications. I enjoy coding,
+        learning new technologies, and solving challenging problems.
+      </p>
     </div>
   </section>
 
@@ -57,74 +52,72 @@
   <section id="projects">
     <div class="container">
       <h2>My Projects 💻</h2>
-      <div class="project-card">
+
+      <article class="project-card">
         <h3>Project 1: Personal Growth Tracker</h3>
-        <p>🌱 Personal Growth Tracker – Track Your Progress, Build Better Habits
-          Personal Growth Tracker is a simple yet powerful tool to help you monitor your daily habits, set personal
-          goals, and reflect on your journey of self-improvement. Whether you're aiming to build discipline, boost
-          productivity, or improve mental well-being, this tracker keeps you focused and accountable — one step at a
-          time.</p>
-        <a href="https://shaikhsahaab.github.io/growth-tracker/" class="project-link">View Project</a>
-      </div><br>
+        <p>🌱 Personal Growth Tracker – Track Your Progress, Build Better Habits Personal Growth Tracker is a simple yet
+          powerful tool to help you monitor your daily habits, set personal goals, and reflect on your journey of
+          self-improvement. Whether you're aiming to build discipline, boost productivity, or improve mental well-being, this
+          tracker keeps you focused and accountable — one step at a time.</p>
+        <a href="https://shaikhsahaab.github.io/growth-tracker/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+      </article>
 
-      <div class="project-card">
+      <article class="project-card">
         <h3>Project 2: BlindVault</h3>
-        <p>🔐 BlindVault – Secure, Zero-Knowledge File Storage
-          BlindVault is a privacy-first web application that allows users to securely store confidential files protected
-          by a unique 4-digit passcode. Built with HTML, CSS, and JavaScript, BlindVault ensures that only the rightful
-          owner can access the stored content — not even the admin can view or decrypt the data.
+        <p>🔐 BlindVault – Secure, Zero-Knowledge File Storage BlindVault is a privacy-first web application that allows
+          users to securely store confidential files protected by a unique 4-digit passcode. Built with HTML, CSS, and
+          JavaScript, BlindVault ensures that only the rightful owner can access the stored content — not even the admin can
+          view or decrypt the data. With a clean interface and zero-knowledge architecture, BlindVault empowers users with
+          full control over their data..</p>
+        <a href="https://shaikhsahaab.github.io/BlindVault/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+      </article>
 
-          With a clean interface and zero-knowledge architecture, BlindVault empowers users with full control over their
-          data..</p>
-        <a href="https://shaikhsahaab.github.io/BlindVault/" class="project-link">View Project</a>
-      </div><br>
-
-      <div class="project-card">
-        <h3>Project 3: </h3>
+      <article class="project-card">
+        <h3>Project 3:</h3>
         <p></p>
         <a href="#" class="project-link">View Project</a>
-      </div><br>
+      </article>
 
     </div>
-
   </section>
+
   <!-- Contact Section -->
   <section id="contact">
     <div class="container">
       <h2>Contact Me 📩</h2>
       <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
         <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required />
 
         <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required />
 
         <label for="message">Your Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
         <!-- Web3Forms Hidden Fields -->
-        <input type="hidden" name="access_key" value="3ed7d396-f1df-4ee7-ae77-b135b956d1e1">
-        <!-- Add your Web3Forms API key here -->
-        <input type="hidden" name="subject" value="New Contact Form Submission">
+        <input type="hidden" name="access_key" value="3ed7d396-f1df-4ee7-ae77-b135b956d1e1" />
+        <input type="hidden" name="subject" value="New Contact Form Submission" />
 
         <button type="submit" class="cta-btn">Send Message</button>
-        <p id="form-status"></p> <!-- This will display the status of the email submission -->
+        <p id="form-status" aria-live="polite"></p>
+
       </form>
     </div>
   </section>
 
   <footer>
-    <div class="">
-    <p>&copy; 2025 <strong>ShaikhSahaab</strong> All rights reserved.</p></div>
+    <p>&copy; 2025 <strong>ShaikhSahaab</strong> All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
   <script>
-        var typed = new Typed('#element', {
-            strings: ['Cyber Securitiest', 'Web Developer', 'Video Editor'],
-            typeSpeed: 50,
-        });
-    </script>
+    // Commented out since Typed.js is not loaded
+    // var typed = new Typed('#element', {
+    //   strings: ['Cyber Security', 'Web Developer', 'Video Editor'],
+    //   typeSpeed: 50,
+    // });
+  </script>
 </body>
 
 </html>
