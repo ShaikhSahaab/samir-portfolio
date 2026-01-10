@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Shaikh's Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER (VIEW) -->
+  <header id="home" class="banner-header">
+    <div class="banner-overlay">
+      <h1>Shaikh Samir Salim</h1>
+      <p>Web Developer | Designer | CyberSecurity</p>
+
+      <nav>
+        <button class="cta-btn" onclick="showSection('projects')">Projects</button>
+        <button class="cta-btn" onclick="showSection('about')">About</button>
+        <button class="cta-btn" onclick="showSection('contact')">Contact</button>
+
+        <a href="https://www.linkedin.com/in/samir-shaikh-a7365a330/"
+           class="cta-btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+        <a href="https://github.com/ShaikhSahaab"
+           class="cta-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="hidden-section">
+    <div class="container">
+      <h2>About Me 🧑‍💻</h2>
+      <p>
+        I am a passionate web developer with experience in creating modern
+        websites and web applications. I enjoy coding, learning new technologies,
+        and solving challenging problems.
+      </p>
+
+      <button class="cta-btn" onclick="goBack()">Back</button>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="hidden-section">
+    <div class="container">
+      <h2>My Projects 💻</h2>
+
+      <article class="project-card">
+        <h3>1. Personal Growth Tracker</h3>
+        <p>🌱 Personal Growth Tracker – Track Your Progress, Build Better Habits Personal Growth Tracker is a simple yet powerful tool to help you monitor your daily habits, set personal goals, and reflect on your journey of self-improvement. Whether you're aiming to build discipline, boost productivity, or improve mental well-being, this tracker keeps you focused and accountable — one step at a time.</p>
+        <a href="https://shaikhsahaab.github.io/growth-tracker/" target="_blank"rel="noreferrer">View Project</a>
+      </article>
+
+      <article class="project-card">
+        <h3>2. BlindVault</h3>
+        <p>🔐 BlindVault – Secure, Zero-Knowledge File Storage BlindVault is a privacy-first web application that allows users to securely store confidential files protected by a unique 4-digit passcode. Built with HTML, CSS, and JavaScript, BlindVault ensures that only the rightful owner can access the stored content — not even the admin can view or decrypt the data. With a clean interface and zero-knowledge architecture, BlindVault empowers users with full control over their data.</p>
+        <a href="https://shaikhsahaab.github.io/BlindVault/" target="_blank"rel="noreferrer">View Project</a>
+      </article>
+
+      <article class="project-card">
+        <h3>3. InkTales</h3>
+        <p>🖋️ InkTales – Stories That Stay With You InkTales is a beautifully designed, easy-to-use online platform for reading and discovering captivating stories across multiple genres. Whether you're into fantasy, mystery, romance, or adventure, InkTales brings together timeless tales and emerging voices in one place. Built with clean HTML, CSS, and JavaScript, InkTales offers a smooth, responsive reading experience with multiple-category browsing, intuitive search, and a cozy, distraction-free design. From short stories to serialized fiction, InkTales is where imagination finds a home.</p>
+        <a href="https://shaikhsahaab.github.io/inktales/" target="_blank"rel="noreferrer">View Project</a>
+      </article>
+
+      <article class="project-card">
+        <h3>4.Daily Journal</h3>
+        <p>📝Daily Journal is a simple, user-friendly web app designed for personal journaling. It allows users to write and save daily journal entries locally on their device with date stamps. The app supports dark mode for comfortable nighttime writing, lets users export entries as PDFs, and is mobile-friendly with Progressive Web App (PWA) functionality — meaning you can install it on your phone and use it offline without needing an account. Your data stays private as everything is stored only in your browser’s local storage.</p>
+        <a href="https://shaikhsahaab.github.io/daily-journal/" target="_blank"rel="noreferrer">View Project</a>
+      </article>
+
+       <article class="project-card">
+        <h3>5.Accounting Management</h3>
+        <p>DailyBalance is a privacy-first personal and small business accounting web app designed to help users track income, expenses, and financial health with clarity and ease. Built as a Progressive Web App (PWA), it works seamlessly across devices and remains fully functional even offline.The platform offers intuitive transaction management, real-time financial summaries, visual insights through charts, and advanced tools like Bank Reconciliation Statements (BRS). With support for data import/export (CSV, Excel, PDF) and local-first storage, DailyBalance ensures users maintain full control over their financial data without relying on external. </p>
+        <a href="https://shaikhsahaab.github.io/accounting_management/" target="_blank"rel="noreferrer">View Project</a>
+      </article>
+
+      <article class="project-card">
+        <h3>6.Rental Services</h3>
+        <p>Website is Under Construction..........</p>
+        <a href="https://shaikhsahaab.github.io//" target="_blank"rel="noreferrer">🚧</a>
+      </article>
+
+      <button class="cta-btn" onclick="goBack()">Back</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="hidden-section">
+    <div class="container">
+      <h2>Contact Me 📩</h2>
+
+      <form id="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST">
+
+        <label>Your Name</label>
+        <input type="text" name="name" required />
+
+        <label>Your Email</label>
+        <input type="email" name="email" required />
+
+        <label>Your Message</label>
+        <textarea name="message" rows="5" required></textarea>
+
+        <input type="hidden" name="access_key"
+               value="3ed7d396-f1df-4ee7-ae77-b135b956d1e1" />
+
+        <button type="submit" class="cta-btn">Send Message</button>
+        <p id="form-status"></p>
+      </form>
+
+      <button class="cta-btn" onclick="goBack()">Back</button>
+    </div>
+  </section>
+
+  <!-- FOOTER (VIEW) -->
+<footer class="site-footer">
+  <p>&copy; 2025 <strong>ShaikhSahaab</strong>. All rights reserved.</p>
+</footer>
+
+
+
+</body>
+</html>
