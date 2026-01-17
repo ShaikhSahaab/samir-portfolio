@@ -231,3 +231,52 @@ section .cta-btn {
 body {
   padding-bottom: 3rem;
 }
+/* Enhanced styling */
+  #about {
+    padding: 80px 20px;
+    background: #b2baca;
+    color: #000000;
+    text-align: center;
+    transition: all 2.8s ease;
+  }
+
+  #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+
+  #about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #000;
+  }
+
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .skills-list li {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  
+
+  /* Optional animation for hidden-section */
+  .hidden-section {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  .hidden-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease;
+  }
