@@ -36,18 +36,25 @@
   </header>
 
   <!-- ABOUT -->
-  <section id="about" class="hidden-section">
-    <div class="container">
-      <h2>About Me 🧑‍💻</h2>
-      <p>
-        I am a passionate web developer with experience in creating modern
-        websites and web applications. I enjoy coding, learning new technologies,
-        and solving challenging problems.
-      </p>
+<section id="about" class="hidden-section">
+  <div class="container">
+    <h2>About Me 🧑‍💻</h2>
+    <p>
+      Hi! I'm a passionate <strong>web developer</strong> dedicated to building 
+      <em>modern, responsive websites</em> and web applications. I thrive on 
+      coding, exploring new technologies, and tackling challenging problems.
+    </p>
 
-      <button class="cta-btn" onclick="goBack()">Back</button>
-    </div>
-  </section>
+    <ul class="skills-list">
+      <li>💻 Frontend & Backend Development</li>
+      <li>⚡ Problem Solving & Algorithms</li>
+      <li>🌐 Responsive & Accessible Design</li>
+      <li>🧰 Modern JavaScript, HTML, CSS, React</li>
+    </ul>
+    <br>
+    <button class="cta-btn" onclick="goBack()">Go Back</button>
+  </div>
+</section>
 
   <!-- PROJECTS -->
   <section id="projects" class="hidden-section">
@@ -104,20 +111,27 @@
             method="POST">
 
         <label>Your Name</label>
-        <input type="text" name="name" required />
+       <input type="text" name="name" placeholder="Your Name" required>
 
         <label>Your Email</label>
-        <input type="email" name="email" required />
+         <input type="email" name="email" placeholder="Your Email" required>
 
         <label>Your Message</label>
-        <textarea name="message" rows="5" required></textarea>
-
+       <textarea name="message" placeholder="Your Message"></textarea>
+       
         <input type="hidden" name="access_key"
                value="3ed7d396-f1df-4ee7-ae77-b135b956d1e1" />
 
         <button type="submit" class="cta-btn">Send Message</button>
         <p id="form-status"></p>
+
+          <!-- Optional: Subject shown in email -->
+          <input type="hidden" name="subject"value="New Contact Form">
+           <input type="hidden" name="from_name" value="Samir Shaikh Portfolio">
       </form>
+
+
+
 
       <button class="cta-btn" onclick="goBack()">Back</button>
     </div>
@@ -131,4 +145,6 @@
 
 
 </body>
+
+
 </html>
